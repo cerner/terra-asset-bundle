@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+lib
+aggregated-translations
+tests/jest
+.idea
+.npm
+.vscode
