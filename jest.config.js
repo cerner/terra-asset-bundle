@@ -1,6 +1,6 @@
 const jestConfig = require('@cerner/jest-config-terra');
 
-jestConfig.testMatch = ['**/tests/*.test.js']
+jestConfig.testMatch = ['**/tests/*.test.js'];
 
 module.exports = {
   ...jestConfig,

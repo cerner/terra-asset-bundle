@@ -341,7 +341,6 @@ import IconXSymbolLight from 'terra-icon/lib/icon/IconXSymbolLight';
 import IconZoomIn from 'terra-icon/lib/icon/IconZoomIn';
 import IconZoomOut from 'terra-icon/lib/icon/IconZoomOut';
 
-
 const TerraIcon = {};
 
 TerraIcon.IconAbnormal = IconAbnormal;
