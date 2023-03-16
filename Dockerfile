@@ -1,1 +1,2 @@
-FROM docker.cernerrepos.net/ion/ion-node:5
+# use terra-node as base image
+FROM cerner/terra-node-ci:1

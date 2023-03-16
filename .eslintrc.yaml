@@ -1,0 +1,18 @@
+# ---
+parser: babel-eslint
+extends: "@cerner/terra"
+rules:
+  react/forbid-prop-types: off
+
+overrides:
+  - files: "**/src/**/*.js"
+    rules:
+      import/no-extraneous-dependencies: off
+
+  - files: "**/webpack/**/*.js"
+    rules:
+      import/no-extraneous-dependencies: off
+
+  - files: "**/tests/**/*.js"
+    rules:
+      import/no-extraneous-dependencies: off
