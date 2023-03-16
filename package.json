@@ -150,11 +150,11 @@
     "webpack-merge": "^5.8.0"
   },
   "scripts": {
-    "clean": "rimraf node_modules",
+    "clean": "rm -rf node_modules",
     "clean:install": "npm run clean && npm install",
     "compile": "npm run compile:clean && npm run compile:build",
     "compile:build": "webpack --mode=development",
-    "compile:clean": "rimraf ./lib",
+    "compile:clean": "rm -rf ./lib",
     "compile:prod": "npm run compile:clean && webpack --mode=production",
     "danger": "danger ci",
     "deploy": "npm run compile:prod && gh-pages -d build",
