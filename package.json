@@ -150,7 +150,7 @@
     "webpack-merge": "^5.8.0"
   },
   "scripts": {
-    "clean": "rm -rf node_modules",
+    "clean": "rimraf node_modules",
     "clean:install": "npm run clean && npm install",
     "compile": "npm run compile:clean && npm run compile:build",
     "compile:build": "webpack --mode=development",
