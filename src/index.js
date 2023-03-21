@@ -1,4 +1,4 @@
-//----- terra-core -----
+// ----- terra-core -----
 import TerraActionFooter from 'terra-action-footer';
 import TerraActionHeader from 'terra-action-header';
 import TerraAlert from 'terra-alert';
@@ -28,7 +28,6 @@ import TerraHeading from 'terra-heading';
 import TerraHTMLTable from 'terra-html-table';
 import TerraHyperlink from 'terra-hyperlink';
 import { I18nProvider, i18nLoader as I18nLoader } from 'terra-i18n';
-import TerraIcon from './TerraIconAssets.js';
 import TerraImage from 'terra-image';
 import TerraList from 'terra-list';
 import TerraOverlay from 'terra-overlay';
@@ -41,7 +40,7 @@ import TerraSearchField from 'terra-search-field';
 import TerraSectionHeader from 'terra-section-header';
 import TerraShowHide from 'terra-show-hide';
 import TerraSignature from 'terra-signature';
-import TerraSpacer from  'terra-spacer';
+import TerraSpacer from 'terra-spacer';
 import TerraStatus from 'terra-status';
 import TerraStatusView from 'terra-status-view';
 import TerraSwitch from 'terra-switch';
@@ -54,8 +53,7 @@ import TerraToggleSectionHeader from 'terra-toggle-section-header';
 import TerraToolbar from 'terra-toolbar';
 import TerraVisuallyHiddenText from 'terra-visually-hidden-text';
 
-
-//----- terra-framework -----
+// ----- terra-framework -----
 import TerraCollapsibleMenuView from 'terra-collapsible-menu-view';
 import TerraDateInput from 'terra-date-input';
 import TerraDatePicker from 'terra-date-picker';
@@ -68,7 +66,7 @@ import TerraLayout from 'terra-layout';
 import TerraMenu from 'terra-menu';
 import TerraModalManager from 'terra-modal-manager';
 import TerraNavigationLayout from 'terra-navigation-layout';
-import TerraNavigationPrompt from 'terra-navigation-prompt'
+import TerraNavigationPrompt from 'terra-navigation-prompt';
 import TerraNavigationSideMenu from 'terra-navigation-side-menu';
 import TerraNotificationDialog from 'terra-notification-dialog';
 import TerraPopup from 'terra-popup';
@@ -79,8 +77,7 @@ import TerraThemeContext from 'terra-theme-context';
 import TerraThemeProvider from 'terra-theme-provider';
 import TerraTimeInput from 'terra-time-input';
 
-
-//----- terra-clinical -----
+// ----- terra-clinical -----
 import TerraClinicalDataGrid from 'terra-clinical-data-grid';
 import TerraClinicalDetailView from 'terra-clinical-detail-view';
 import TerraClinicalHeader from 'terra-clinical-header';
@@ -91,18 +88,17 @@ import TerraClinicalLabelValueView from 'terra-clinical-label-value-view';
 import TerraClinicalOnsetPicker from 'terra-clinical-onset-picker';
 import TerraClinicalResult from 'terra-clinical-result/lib/index';
 
-
-//----- terra-application -----
+// ----- terra-application -----
 import ApplicationBase from 'terra-application/lib/application-base';
 import ApplicationErrorBoundary from 'terra-application/lib/application-error-boundary';
-import ApplicationLoadingOverlay from 'terra-application/lib/application-loading-overlay';
-import { ApplicationLoadingOverlayProvider } from 'terra-application/lib/application-loading-overlay';
+import ApplicationLoadingOverlay, { ApplicationLoadingOverlayProvider } from 'terra-application/lib/application-loading-overlay';
+
 import ApplicationNavigation, { ApplicationNavigationActionsContext } from 'terra-application/lib/application-navigation';
-import ApplicationStatusOverlay from 'terra-application/lib/application-status-overlay';
-import { ApplicationStatusOverlayProvider } from 'terra-application/lib/application-status-overlay';
+import ApplicationStatusOverlay, { ApplicationStatusOverlayProvider } from 'terra-application/lib/application-status-overlay';
+
 import ModalManager from 'terra-application/lib/modal-manager';
-import NavigationPrompt from 'terra-application/lib/navigation-prompt';
-import { NavigationPromptCheckpoint } from 'terra-application/lib/navigation-prompt';
+import NavigationPrompt, { NavigationPromptCheckpoint } from 'terra-application/lib/navigation-prompt';
+
 import SlidePanelManager from 'terra-application/lib/slide-panel-manager';
 import { WorkspaceContent } from 'terra-application/lib/workspace';
 import { DisclosureManagerContext } from 'terra-application/lib/disclosure-manager';
@@ -110,33 +106,33 @@ import Breakpoints, { activeBreakpointForSize as ActiveBreakpointForSize, breakp
 import EventEmitter from 'terra-application/lib/utils/event-emitter';
 import Logger from 'terra-application/lib/utils/logger';
 import { ThemeContext } from 'terra-application/lib/theme';
+import TerraIcon from './TerraIconAssets';
 
 const TerraFrontendAssets = {};
 
 // ----  terra-application -------
 TerraFrontendAssets.TerraApplication = {
-                                            ApplicationBase,
-                                            DisclosureManagerContext,
-                                            ApplicationErrorBoundary,
-                                            ApplicationLoadingOverlay,
-                                            ApplicationLoadingOverlayProvider,
-                                            ApplicationNavigation,
-                                            ApplicationNavigationActionsContext,
-                                            ApplicationStatusOverlay,
-                                            ApplicationStatusOverlayProvider,
-                                            Breakpoints,
-                                            ActiveBreakpointForSize,
-                                            BreakpointIsActiveForSize,
-                                            EventEmitter,
-                                            Logger,
-                                            ModalManager,
-                                            NavigationPrompt,
-                                            NavigationPromptCheckpoint,
-                                            SlidePanelManager,
-                                            ThemeContext,
-                                            WorkspaceContent
-                                        };
-
+  ApplicationBase,
+  DisclosureManagerContext,
+  ApplicationErrorBoundary,
+  ApplicationLoadingOverlay,
+  ApplicationLoadingOverlayProvider,
+  ApplicationNavigation,
+  ApplicationNavigationActionsContext,
+  ApplicationStatusOverlay,
+  ApplicationStatusOverlayProvider,
+  Breakpoints,
+  ActiveBreakpointForSize,
+  BreakpointIsActiveForSize,
+  EventEmitter,
+  Logger,
+  ModalManager,
+  NavigationPrompt,
+  NavigationPromptCheckpoint,
+  SlidePanelManager,
+  ThemeContext,
+  WorkspaceContent,
+};
 
 // ----  terra-core -------
 TerraFrontendAssets.TerraActionFooter = TerraActionFooter;
@@ -194,7 +190,7 @@ TerraFrontendAssets.TerraToggleSectionHeader = TerraToggleSectionHeader;
 TerraFrontendAssets.TerraToolbar = TerraToolbar;
 TerraFrontendAssets.TerraVisuallyHiddenText = TerraVisuallyHiddenText;
 
-//----- terra-framework -----
+// ----- terra-framework -----
 TerraFrontendAssets.TerraCollapsibleMenuView = TerraCollapsibleMenuView;
 TerraFrontendAssets.TerraContentContainer = TerraContentContainer;
 TerraFrontendAssets.TerraDateInput = TerraDateInput;
@@ -220,7 +216,7 @@ TerraFrontendAssets.TerraInfiniteList = TerraInfiniteList;
 TerraFrontendAssets.TerraHookshot = TerraHookshot;
 TerraFrontendAssets.TerraEmbeddedContentConsumer = TerraEmbeddedContentConsumer;
 
-//----- terra-clinical -----
+// ----- terra-clinical -----
 TerraFrontendAssets.TerraClinicalDataGrid = TerraClinicalDataGrid;
 TerraFrontendAssets.TerraClinicalDetailView = TerraClinicalDetailView;
 TerraFrontendAssets.TerraClinicalHeader = TerraClinicalHeader;
@@ -230,6 +226,5 @@ TerraFrontendAssets.TerraClinicalItemView = TerraClinicalItemView;
 TerraFrontendAssets.TerraClinicalLabelValueView = TerraClinicalLabelValueView;
 TerraFrontendAssets.TerraClinicalOnsetPicker = TerraClinicalOnsetPicker;
 TerraFrontendAssets.TerraClinicalResult = TerraClinicalResult;
-
 
 export default TerraFrontendAssets;

@@ -3,3 +3,4 @@
 ## Unreleased
 
 * set up repo and created Terra bundle
+* Set up CI/CD
