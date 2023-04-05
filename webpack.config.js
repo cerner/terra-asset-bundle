@@ -1,14 +1,14 @@
 const { merge } = require('webpack-merge');
 const WebpackConfigTerra = require('@cerner/webpack-config-terra');
 const path = require('path');
-var webpack = require('webpack');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const repoConfig = () => ({
   entry: './src/index.js',
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
-        maxChunks: 1, // disable creating additional chunks
+      maxChunks: 1, // disable creating additional chunks
     }),
     new MiniCssExtractPlugin({
       filename: 'main.css',
