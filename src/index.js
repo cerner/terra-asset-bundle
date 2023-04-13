@@ -228,5 +228,5 @@ TerraFrontendAssets.TerraClinicalOnsetPicker = TerraClinicalOnsetPicker;
 TerraFrontendAssets.TerraClinicalResult = TerraClinicalResult;
 
 window.terra = window.terra || TerraFrontendAssets;
- 
+
 export default TerraFrontendAssets;
